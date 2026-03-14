@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B30D43982F3225F90087AE30 /* tables in Resources */ = {isa = PBXBuildFile; fileRef = B30D43972F3225F90087AE30 /* tables */; };
+		B30D439A2F3248800087AE30 /* BrailleTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30D43992F3248800087AE30 /* BrailleTables.swift */; };
+		B3B5FC4A2F2E4F9800CD26B0 /* liblouis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B5FC492F2E4F9800CD26B0 /* liblouis.a */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		B30D43972F3225F90087AE30 /* tables */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tables; path = Liblouis/tables; sourceTree = "<group>"; };
+		B30D43992F3248800087AE30 /* BrailleTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrailleTables.swift; sourceTree = "<group>"; };
 		B3B5F8A02F2E46D500CD26B0 /* Anvill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anvill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B5FC492F2E4F9800CD26B0 /* liblouis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblouis.a; sourceTree = "<group>"; };
+		B3B5FC4B2F2E7D1500CD26B0 /* Anvil-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Anvil-Bridging-Header.h"; sourceTree = "<group>"; };
+		B3EC87E92F321FF400744316 /* Liblouis */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Liblouis; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B5FC4A2F2E4F9800CD26B0 /* liblouis.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +44,11 @@
 		B3B5F8972F2E46D500CD26B0 = {
 			isa = PBXGroup;
 			children = (
+				B30D43992F3248800087AE30 /* BrailleTables.swift */,
+				B30D43972F3225F90087AE30 /* tables */,
+				B3EC87E92F321FF400744316 /* Liblouis */,
+				B3B5FC4B2F2E7D1500CD26B0 /* Anvil-Bridging-Header.h */,
+				B3B5FC492F2E4F9800CD26B0 /* liblouis.a */,
 				B3B5F8A22F2E46D500CD26B0 /* Anvill */,
 				B3B5F8A12F2E46D500CD26B0 /* Products */,
 			);
@@ -109,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30D43982F3225F90087AE30 /* tables in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30D439A2F3248800087AE30 /* BrailleTables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,15 +270,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandt.Anvill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -268,6 +288,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Anvil-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -281,15 +302,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brandt.Anvill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +320,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Anvil-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
