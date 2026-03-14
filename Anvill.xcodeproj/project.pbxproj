@@ -21,9 +21,22 @@
 		B3EC87E92F321FF400744316 /* Liblouis */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Liblouis; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B3C1CD252F65E37200B3DF3A /* Exceptions for "Anvill" folder in "Anvill" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B3B5F89F2F2E46D500CD26B0 /* Anvill */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B3B5F8A22F2E46D500CD26B0 /* Anvill */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B3C1CD252F65E37200B3DF3A /* Exceptions for "Anvill" folder in "Anvill" target */,
+			);
 			path = Anvill;
 			sourceTree = "<group>";
 		};
@@ -274,7 +287,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = Anvill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Copyright (human-readable) Column 1";
+				INFOPLIST_KEY_LSApplicationCategoryType = Anvill;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -306,7 +321,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = Anvill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Copyright (human-readable) Column 1";
+				INFOPLIST_KEY_LSApplicationCategoryType = Anvill;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
